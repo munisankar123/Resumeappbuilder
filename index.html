@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Resume Builder Web Application</h1>
+    <div class="container"> 
+        <form id="resume_form">
+            <div class="personal_details">
+                <h2 id="personal">Personal Details</h2>
+                <hr>
+                <div class="input-container">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Name" required>
+                </div>
+                <div class="input-container">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="input-container">
+                    <label for="phone">Phone number:</label>
+                    <input type="text" name="phone" id="phone" placeholder="Phone number" required>
+                </div>
+                <div class="input-container">
+                    <label for="linkedin">LinkedIn:</label>
+                    <input type="url" name="linkedin" id="linkedin" placeholder="LinkedIn" required>
+                </div>
+                <div class="input-container">
+                    <label for="github">Github:</label>
+                    <input type="url" name="github" id="github" placeholder="Github" required>
+                </div>
+            </div>
+
+            <div>
+                <h2>Career Objectives</h2>
+                <hr>
+                <p id="career_objectives">Enthusiastic and detail-oriented Electrical and Communication Engineering student with a strong foundation in theoretical principles and hands-on experience. Eager to apply my technical skills and knowledge to contribute to innovative projects and solutions. Proven ability to work collaboratively in team environments and adapt to rapidly changing technologies. Seeking a challenging role to further develop my skills and make a meaningful impact in the field of Electrical and Communication Engineering.</p>
+            </div>
+            <hr>
+            <h2>Educational Details</h2>
+            <div id="education_fields"></div>
+            <button type="button" id="addeducation">Add more</button>
+            <hr style="color: rgb(210, 19, 19);">
+            <h2>Skills</h2>
+            <div id="skills"></div>
+            <button type="button" id="addskills">Add more</button>
+            <hr>
+            <h2>Certifications</h2>
+            <div id="certifications"></div>
+            <button type="button" id="addcertification">Add more</button>
+            <hr>
+            <h2>Projects completed</h2>
+            <div id="projects"></div>
+            <button type="button" id="addprojects">Add more</button>
+            <hr>
+            <h2>Strengths</h2>
+            <div id="Strengths"></div>
+            <button type="button" id="addstrengths">Add more</button>
+            <hr>
+            <h2>Hobbies</h2>
+            <div id="hobbies"></div>
+            <button type="button" id="addhobbies">Add more</button>
+            <hr>
+            <h2>Declaration</h2>
+            <div>
+                <p>
+                    I do hereby declare that the above information is true to the best of my knowledge. Finally, I request
+                    the concerned authorities to provide me a chance, so I can prove the best of myself. I shall ever be thankful and
+                    grateful to you.
+                </p>
+            </div>
+            <input type="submit" id="submitBtn" value="Submit">
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

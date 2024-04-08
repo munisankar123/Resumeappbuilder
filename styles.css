@@ -1,0 +1,59 @@
+body {
+    height: 100%; /* 100% viewport height */
+    border: 12px solid black; /* 12px top and bottom */
+    border-left: 100px solid black; /* 10px left */
+    border-right: 100px solid black; /* 10px right */
+    padding-left: 5px; /* Remove default body padding */
+    margin: 0; /* Remove default body margin */
+    font-family: Arial, sans-serif; /* Set default font family */
+}
+
+/* Header styles */
+.header {
+    padding-left:5px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+#header_details {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap:40%;
+}
+#header_details img {
+   align-content: end; /* Remove default margin */
+}
+/* Details section styles */
+#details {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#details p {
+    margin: 0 10px; /* Add margin between details */
+}
+#careerobj {
+    text-align: justify;
+}
+#declaration {
+    text-align: justify;
+}
+/* Educational details list styles */
+#eduinfo {
+    text-align: left;
+}
+#certficateinfo {
+    text-align: left;
+}
+#skills {
+    text-align: left;
+}
+#hobbiesinfo{
+    text-align: left;
+}
+#strengthinfo{
+    text-align: left;
+}
+#proinfo{
+    text-align: left;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border around Web Page</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="content">
+        <div class="header">
+            <h1 id="myname"></h1>
+            <div id="details">
+                <p id="myemail"></p>||
+                <p id="myphone"></p>||
+                <p><a id="linkedinurl" href="">linkedin</a></p>||
+                <p></p><a id="githuburl" href="">github</a></p>
+            </div>
+            <hr>
+            <div id="career_objectives">
+                <h3 style="text-align:left;">Career Objectives</h3>
+                <p id="careerobj">
+                    Enthusiastic and detail-oriented Electrical and Communication Engineering student with a strong foundation in
+                    theoretical principles and hands-on experience. Eager to apply my technical skills and knowledge to contribute to
+                    innovative projects and solutions. Proven ability to work collaboratively in team environments and adapt to rapidly
+                    changing technologies. Seeking a challenging role to further develop my skills and make a meaningful impact in the field
+                    of Electrical and Communication Engineering.
+                </p>
+            </div>
+            <hr>
+            <div id="educationalinfo">
+                <h3 style="text-align:left;">Educational Details</h3>
+                <p id="education">
+                    <ul id="eduinfo">
+                    </ul>
+                </p>
+            </div>
+            <hr>
+            <div id="skillsinfo">
+                <h3 style="text-align:left;">Skills</h3>
+                <ul id="skills">
+
+                </ul>
+            </div>
+            <hr>
+            <div id="certificateinfo">
+                <h3 style="text-align:left;"> Certifications</h3>
+                <ul id="certficateinfo">
+                </ul>
+            </div>
+            <hr>
+            <div id="projectsinfo">
+                <h3 style="text-align:left;">Projects</h3>
+                <ul id="proinfo">
+                </ul>
+            </div>
+            <hr>
+            <div id="strengthsinformation">
+                <h3 style="text-align:left;">Strengths</h3>
+                 <ul id="strengthinfo">
+                </ul>
+            </div>
+            <hr>
+            <div id="hobbiesinformation">
+                <h3 style="text-align:left;">Hobbies</h3>
+                <ul id="hobbiesinfo">
+                </ul>
+            </div>
+            <hr>
+            <div>
+                <h3 style="text-align:left;">Declaration</h3>
+                <p id="declaration">
+                    I do hereby declare that the above information is true to the best of my knowledge. Finally, I request
+the concerned authorities to provide me a chance, so I can prove the best of myself. I shall ever be thankful and
+grateful to you
+                </p>
+            </div>
+        </div>
+        
+
+    <script src="Resume.js">
+    </script>
+    <script>
+        function saveAsPDF() {
+            const element = document.querySelector('.header'); // Select the div with class 'content'
+            html2pdf()
+                .from(element)
+                .save('header.pdf');
+        }
+    </script>
+    <!-- Button to trigger PDF generation -->
+    <button onclick="saveAsPDF()">Save as PDF</button>
+</body>
+</html>

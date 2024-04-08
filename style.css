@@ -1,0 +1,310 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(231, 91, 22);
+}
+h1{
+    text-decoration-thickness:2px;
+    font-family: "Audiowide", sans-serif;
+    padding:10px;
+    border:0;
+    margin:0;
+    text-align: center;
+    text-decoration:blue;
+    color:rgb(100, 74, 170);
+
+}
+.container{
+    background-color: rgb(250, 236, 181);
+    
+
+}
+#submitBtn {
+    display: block;
+    width:20%;
+    margin: 0 auto; /* Centers the button horizontally */
+    text-align: center; /* Centers the text within the button */
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.personal_details {
+    background-color: #5bece4; /* Background color */
+    padding: 20px; /* Padding around the section */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle depth effect */
+}
+
+.personal_details h2 {
+    text-align: center; /* Remove default margin for the heading */
+    color: #333; /* Text color for the heading */
+}
+.input-container {
+    margin-bottom: 15px; /* Spacing between input fields */
+}
+
+.input-container label {
+    display: inline-block; /* Make labels behave like block elements */
+    width: 150px; /* Set label width */
+    font-weight: bold; /* Bold text for labels */
+    margin-right: 10px; /* Right margin for spacing */
+}
+
+.input-container input[type="text"],
+.input-container input[type="email"],
+.input-container input[type="url"] {
+    width: calc(100% - 160px); /* Set input field width */
+    padding: 8px; /* Padding for input fields */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Rounded corners for input fields */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.input-container input[type="text"]:focus,
+.input-container input[type="email"]:focus,
+.input-container input[type="url"]:focus {
+    border-color: #007bff; /* Border color on focus */
+    outline: none; /* Remove default focus outline */
+}
+
+#education_fields {
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Arrange items horizontally */
+    background-color: #d85959; /* Light background color */
+    padding: 10px; /* Add padding for spacing */
+    align-items: center;
+    justify-content: center; /* Center items horizontally */
+}
+
+/* Style for each field container */
+.education_1 {
+    margin-right: 10px; /* Add space between each field */
+}
+
+label {
+    display: flex; /* Ensure labels are on their own line */
+    margin-bottom: 5px; /* Add space below each label */
+    color: blueviolet;
+}
+
+/* Style for inputs */
+input {
+    padding: 5px; /* Add padding for better readability */
+}
+
+/* Style for the "Add more" button */
+#addeducation {
+    display: block;
+    margin: 0 auto; /* Centers the button horizontally */
+    text-align: center; /* Centers the text within the button */
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px;
+    background-color: #4bd333; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+#skills {
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    background-color: #d85959; /* Light background color */
+    padding: 10px; /* Add padding for spacing */
+    align-items: center;
+}
+
+/* Style for each skill container */
+.skills_1 {
+    margin-right: 10px; /* Add space between each skill */
+    margin-bottom: 10px; /* Add space below each row of skills */
+}
+
+label {
+    display: flex; /* Ensure labels are on their own line */
+    margin-bottom: 5px; /* Add space below each label */
+    color: blueviolet;
+}
+
+/* Style for inputs */
+input {
+    padding: 5px; /* Add padding for better readability */
+}
+
+/* Style for the "Add more" button */
+#addskills {
+    display: block;
+    margin: 0 auto; /* Centers the button horizontally */
+    text-align: center; /* Centers the text within the button */
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px;
+    background-color: #4bd333; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#certifications {
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    background-color: #d85959; /* Light background color */
+    padding: 10px; /* Add padding for spacing */
+    align-items: center;
+}
+
+/* Style for each certification container */
+.certification_1 {
+    margin-right: 10px; /* Add space between each certification */
+    margin-bottom: 10px; /* Add space below each row of certifications */
+}
+
+label {
+    display: flex; /* Ensure labels are on their own line */
+    margin-bottom: 5px; /* Add space below each label */
+    color: blueviolet;
+}
+
+/* Style for inputs */
+input {
+    padding: 5px; /* Add padding for better readability */
+}
+
+/* Style for the "Add more" button */
+#addcertification {
+    display: block;
+    margin: 0 auto; /* Centers the button horizontally */
+    text-align: center; /* Centers the text within the button */
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px;
+    background-color: #4bd333; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#projects {
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    background-color: #d85959; /* Light background color */
+    padding: 10px; /* Add padding for spacing */
+    align-items: center;
+}
+
+/* Style for each project container */
+.projects_1 {
+    margin-right: 10px; /* Add space between each project */
+    margin-bottom: 10px; /* Add space below each row of projects */
+    width: calc(100% - 5px); /* Set width to 50% minus margin */
+}
+
+label {
+    display: flex; /* Ensure labels are on their own line */
+    margin-bottom: 5px; /* Add space below each label */
+    color: blueviolet;
+}
+
+/* Style for inputs */
+input {
+    width: 100%; /* Set width to 100% */
+    padding: 5px; /* Add padding for better readability */
+}
+
+/* Style for the "Add more" button */
+#addprojects {
+    display: block;
+    margin: 0 auto; /* Centers the button horizontally */
+    text-align: center; /* Centers the text within the button */
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px;
+    background-color: #4bd333; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Style for the container */
+#Strengths, #hobbies {
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    background-color: #d85959; /* Light background color */
+    padding: 10px; /* Add padding for spacing */
+    align-items: center;
+}
+
+/* Style for each field container */
+.Strength_1, .hobbies_1 {
+    margin-right: 10px; /* Add space between each field */
+    margin-bottom: 10px; /* Add space below each row of fields */
+    width: calc(50% - 5px); /* Set width to 50% minus margin */
+}
+
+label {
+    display: flex; /* Ensure labels are on their own line */
+    margin-bottom: 5px; /* Add space below each label */
+    color: blueviolet;
+}
+
+/* Style for inputs */
+input {
+    width: 100%; /* Set width to 100% */
+    padding: 5px; /* Add padding for better readability */
+}
+
+/* Style for the "Add more" buttons */
+#addstrengths, #addhobbies {
+    display: block;
+    margin: 0 auto; /* Centers the button horizontally */
+    text-align: center; /* Centers the text within the button */
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px;
+    background-color: #4bd333; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-item {
+    margin-bottom: 10px; /* Add margin between each flex item */
+}
+
+.number {
+    position: absolute;
+    left: -20px;
+    top: 0;
+    background-color: #f1f1f1;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
